@@ -6,24 +6,24 @@ flask section - ninja_gold assignment
 
 ## START AND RESET VIEW...
 
-<img width="1036" alt="ninja_gold_1" src="https://user-images.githubusercontent.com/99504059/176359903-6d6d959e-5582-4157-94a4-a2b07420d07c.png">
+<img width="350" alt="ninja_gold_1" src="https://user-images.githubusercontent.com/99504059/176361975-f61cf73b-4709-4907-aeb6-f68128d84cf3.png">
 
 ## FARM GOLD ADDED...
 
-<img width="1028" alt="ninja_gold_2" src="https://user-images.githubusercontent.com/99504059/176359910-4a1526de-ca54-430e-bbbc-571ac6fe34fa.png">
+<img width="350" alt="ninja_gold_2" src="https://user-images.githubusercontent.com/99504059/176361993-140482b7-0525-4508-981a-9761cb75c2fa.png">
 
 ## CAVE GOLD ADDED...
 
-<img width="1014" alt="ninja_gold_3" src="https://user-images.githubusercontent.com/99504059/176359919-017b18e8-2304-4817-ab6e-4dc64cee9f91.png">
+<img width="350" alt="ninja_gold_3" src="https://user-images.githubusercontent.com/99504059/176362004-e373812f-27c4-42f6-9d43-e0934e997959.png">
 
 ## HOUSE GOLD ADDED...
 
-<img width="1022" alt="ninja_gold_4" src="https://user-images.githubusercontent.com/99504059/176359925-de5803fa-c5a7-47e6-89bf-d43715d32256.png">
+<img width="350" alt="ninja_gold_4" src="https://user-images.githubusercontent.com/99504059/176362022-f60de354-45d4-4c9b-a8cd-a30dda4fec1f.png">
 
 ## CASINO GOLD ADDED...
 
-<img width="1041" alt="ninja_gold_5" src="https://user-images.githubusercontent.com/99504059/176359936-5e1f29e7-49cb-437f-a859-d78882c8cf13.png">
+<img width="350" alt="ninja_gold_5" src="https://user-images.githubusercontent.com/99504059/176362037-023df48a-4fd2-4375-9651-b43a2e547bf7.png">
 
 ## CASINO GOLD LOST... (note: not all plays fit in the screenshot so totals will not add up)
 
-<img width="1036" alt="ninja_gold_6" src="https://user-images.githubusercontent.com/99504059/176359943-31029c29-72ce-4e31-a0e1-d871140ccda1.png">
+<img width="350" alt="ninja_gold_6" src="https://user-images.githubusercontent.com/99504059/176362065-e06330e7-0a2c-4ee2-b2c3-c56dcfb8f2e8.png">
