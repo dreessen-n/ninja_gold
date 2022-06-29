@@ -29,10 +29,10 @@ def index():
         len_message_list = len(message_list)
     return render_template('index.html', message_list=message_list, len_message_list=len_message_list)
 
-@app.route('/process_money/<int:num1>/<int:num2>', methods=['POST'])
-def process(num1, num2):
+@app.route('/process_money/<string:str1>/<int:num2>', methods=['POST'])
+def process(str1, num2):
     """Process the play and calculate wins/loses"""
-    print(num1, num2)
+    num1 = int(str1)
     session['gold_play'] = random.randint(num1, num2)
     session['has_gold'] = 1
     if session['gold_play'] > 0:
