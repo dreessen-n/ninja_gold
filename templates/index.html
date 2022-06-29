@@ -13,7 +13,7 @@
         <h1 class="pb-2 border-bottom">Ninja Gold</h1>
         <h2 class="pb-2 border-bottom">Your Pot of Gold:  you have {{ session['your_gold'] }} gold</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
-            <form action="/process_money" method="post">
+            <form action="/process_money/10/20" method="post">
                 <div class="col d-flex align-items-start box">
                     <div>
                         <h2>Farm</h2>
@@ -23,7 +23,7 @@
                     </div>
                 </div>
             </form>
-            <form action="/process_money" method="post">
+            <form action="/process_money/5/10" method="post">
                 <div class="col d-flex align-items-start box">
                     <div>
                         <h2>Cave</h2>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
             </form>
-            <form action="/process_money" method="post">
+            <form action="/process_money/2/5" method="post">
                 <div class="col d-flex align-items-start box">
                     <div>
                         <h2>House</h2>
@@ -43,7 +43,7 @@
                     </div>
                 </div>
             </form>
-            <form action="/process_money" method="post">
+            <form action="/process_money/%2D50/50" method="post">
                 <div class="col d-flex align-items-start box">
                     <div>
                         <h2>Casino</h2>
