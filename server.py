@@ -32,6 +32,7 @@ def index():
 @app.route('/process_money/<int:num1>/<int:num2>', methods=['POST'])
 def process(num1, num2):
     """Process the play and calculate wins/loses"""
+    print(num1, num2)
     session['gold_play'] = random.randint(num1, num2)
     session['has_gold'] = 1
     if session['gold_play'] > 0:
