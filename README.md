@@ -2,6 +2,7 @@
 flask section - ninja_gold assignment
 
 ### Most recent play is at the top of the list
+### Added gold in green and lost gold in red
 
 ## START AND RESET VIEW...
 
