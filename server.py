@@ -8,6 +8,7 @@ app.secret_key='Mind your pot of GOLD'
 # Creat a list to store plays
 # plays = []
 message = ""
+message_list = []
 
 @app.route('/')
 def index():
@@ -17,9 +18,12 @@ def index():
         session['gold_play'] = 0
         session['has_gold'] = 0
         session['message'] = ""
+        session['message_list'] = []
+        message_list = []
     else:
         session['your_gold'] += session['gold_play']
-    return render_template('index.html')
+        message_list = session['message_list']
+    return render_template('index.html', message_list=message_list)
 
 @app.route('/process_money', methods=['POST'])
 def process():
@@ -27,22 +31,22 @@ def process():
     if request.form['name'] == 'farm':
         session['gold_play'] = random.randint(10, 20)
         session['has_gold'] = 1
-        session['message'] += f"<p class='text-success'>Earned {session['gold_play']} from the farm. ({datetime.datetime.now()})</p>"
+        session['message_list'].append(f"<p class='text-success'>Earned {session['gold_play']} from the farm. ({datetime.datetime.now()})</p>")
     elif request.form['name'] == 'cave':
         session['gold_play'] = random.randint(5, 10)
         session['has_gold'] = 1
-        session['message'] += f"<p class='text-success'>Earned {session['gold_play']} from the cave. ({datetime.datetime.now()})</p>"
+        session['message_list'].append(f"<p class='text-success'>Earned {session['gold_play']} from the cave. ({datetime.datetime.now()})</p>")
     elif request.form['name'] == 'house':
         session['gold_play'] = random.randint(2, 5)
         session['has_gold'] = 1
-        session['message'] += f"<p class='text-success'>Earned {session['gold_play']} from the house. ({datetime.datetime.now()})</p>"
+        session['message_list'].append(f"<p class='text-success'>Earned {session['gold_play']} from the house. ({datetime.datetime.now()})</p>")
     else:
         session['gold_play'] = random.randint(-50, 50)
         session['has_gold'] = 1
         if session['gold_play'] > 0:
-            session['message'] += f"<p class='text-success'>Earned {session['gold_play']} from the casino. ({datetime.datetime.now()})</p>"
+            session['message_list'].append(f"<p class='text-success'>Earned {session['gold_play']} from the casino. ({datetime.datetime.now()})</p>")
         else:
-            session['message'] += f"<p class='text-danger'>Entered a casino and lost {session['gold_play']} golds... ouch. ({datetime.datetime.now()})</p>"
+            session['message_list'].append(f"<p class='text-danger'>Entered a casino and lost {session['gold_play']} golds... ouch. ({datetime.datetime.now()})</p>")
     return redirect('/')
 
 @app.route('/end_session')
