@@ -62,8 +62,8 @@
             {% elif session['has_gold'] == 2: %}
             <h4 class="alert-heading alert alert-danger">Too bad! Your loosing your money.</h4>
             {% endif %}
-            {% for message in message_list  %}
-                {{ message|safe }}
+            {% for i in range(len_message_list, 0, -1)  %}
+                {{ message_list[i-1]|safe }}
             {% endfor %}
             <!-- {{ session['message']|safe }} -->
         </div>

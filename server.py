@@ -20,10 +20,12 @@ def index():
         session['message'] = ""
         session['message_list'] = []
         message_list = []
+        len_message_list = 0
     else:
         session['your_gold'] += session['gold_play']
         message_list = session['message_list']
-    return render_template('index.html', message_list=message_list)
+        len_message_list = len(message_list)
+    return render_template('index.html', message_list=message_list, len_message_list=len_message_list)
 
 @app.route('/process_money', methods=['POST'])
 def process():
