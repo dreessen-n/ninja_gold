@@ -4,7 +4,7 @@ flask section - ninja_gold assignment
 ### Most recent play is at the top of the list
 ### Added gold in green and lost gold in red
 ### Have it running with no conditionals (except to change color on output)
->> Had to pass a string for fist value so it could represent negative number; then convert to int for random generation
+>> Had to pass a string for first value so it could represent negative number; then convert to int for random generation
 
 ## START AND RESET VIEW...
 
