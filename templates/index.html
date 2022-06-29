@@ -12,50 +12,57 @@
     <div class="container px-4 py-5" id="hanging-icons">
         <h1 class="pb-2 border-bottom">Ninja Gold</h1>
         <h2 class="pb-2 border-bottom">Your Pot of Gold:  you have {{ session['your_gold'] }} gold</h2>
-        <form action="/process_money" method="post">
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
+            <form action="/process_money" method="post">
                 <div class="col d-flex align-items-start box">
                     <div>
                         <h2>Farm</h2>
                         <p>(Earns 10-20 golds)</p>
-                        <input class="btn btn-warning" name="farm" type="submit" value="Find Gold!"> 
+                        <input type="hidden" name="name" value="farm" />
+                        <input class="btn btn-warning" type="submit" value="Find Gold!"> 
                     </div>
                 </div>
+            </form>
+            <form action="/process_money" method="post">
                 <div class="col d-flex align-items-start box">
                     <div>
                         <h2>Cave</h2>
                         <p>(Earns 5-10 golds)</p>
-                        <input class="btn btn-warning" name="cave" type="submit" value="Find Gold!"> 
+                        <input type="hidden" name="name" value="cave" />
+                        <input class="btn btn-warning" type="submit" value="Find Gold!"> 
                     </div>
                 </div>
+            </form>
+            <form action="/process_money" method="post">
                 <div class="col d-flex align-items-start box">
                     <div>
                         <h2>House</h2>
                         <p>(Earns 2-5 golds)</p>
-                        <input class="btn btn-warning" name="house" type="submit" value="Find Gold!"> 
+                        <input type="hidden" name="name" value="house" />
+                        <input class="btn btn-warning" type="submit" value="Find Gold!"> 
                     </div>
                 </div>
+            </form>
+            <form action="/process_money" method="post">
                 <div class="col d-flex align-items-start box">
                     <div>
                         <h2>Casino</h2>
                         <p>(Earns 0-50 golds)</p>
-                        <input class="btn btn-warning" name="casino" type="submit" value="Find Gold!"> 
+                        <input type="hidden" name="name" value="casino" />
+                        <input class="btn btn-warning" type="submit" value="Find Gold!"> 
                     </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
         <h2 class="pb-2 border-bottom">Activities:</h2>
+        <a class="btn btn-primary btn-lg px-4 gap-3 btn-warning" href="/end_session" role="button">Reset</a>
         <div class="alert" role="alert">
             {% if session['has_gold'] == 1 %}
             <h4 class="alert-heading alert lert-success">Well done! You are winning money.</h4>
             {% elif session['has_gold'] == 2: %}
             <h4 class="alert-heading alert alert-danger">Too bad! Your loosing your money.</h4>
             {% endif %}
-            {% for play in plays %}
-            <p>play</p>
-            {% endfor %}
-            <!-- <hr>
-            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p> -->
+            {{ session['message']|safe }}
         </div>
     </div>  
 
