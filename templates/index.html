@@ -55,13 +55,7 @@
             </form>
         </div>
         <h2 class="pb-2 border-bottom">Activities:</h2>
-        <a class="btn btn-primary btn-lg px-4 gap-3 btn-warning" href="/end_session" role="button">Reset</a>
-        <div class="alert" role="alert">
-            {% if session['has_gold'] == 1 %}
-            <h4 class="alert-heading alert lert-success">Well done! You are winning money.</h4>
-            {% elif session['has_gold'] == 2: %}
-            <h4 class="alert-heading alert alert-danger">Too bad! Your loosing your money.</h4>
-            {% endif %}
+        <a class="btn btn_reset btn-primary btn-lg px-4 gap-3 btn-warning" href="/end_session" role="button">Reset</a>
             {% for i in range(len_message_list, 0, -1)  %}
                 {{ message_list[i-1]|safe }}
             {% endfor %}
