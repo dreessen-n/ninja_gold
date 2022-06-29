@@ -24,6 +24,6 @@ flask section - ninja_gold assignment
 
 <img width="1041" alt="ninja_gold_5" src="https://user-images.githubusercontent.com/99504059/176359936-5e1f29e7-49cb-437f-a859-d78882c8cf13.png">
 
-## CASINO GOLD LOST...
+## CASINO GOLD LOST... (note: not all plays fit in the screenshot so totals will not add up)
 
 <img width="1036" alt="ninja_gold_6" src="https://user-images.githubusercontent.com/99504059/176359943-31029c29-72ce-4e31-a0e1-d871140ccda1.png">
